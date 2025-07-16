@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --nav-color: #333;
+    --text-color: #fff;
+    --bg-color: #207F82;
+    --btn-color: #4ab052da; 
+}
+
+body{
+    font-family: Arial;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: var(--nav-color);
+
+    /* layout */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+    
+}
+
+nav ul{
+    width: 40%;
+    height: 50px;
+    /* background-color: red; */
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-evenly;    /* space-around first */
+    align-items: center; 
+   
+
+}
+
+nav ul li a{
+    /* text-decoration: none;
+    color: var(--text-color); */
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover{
+    background-color: var(--btn-color);
+}
+
+/* Home Section */
+#home{
+    width: 100%;
+    height: 300px;
+    /* background-color: red; */
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* #home h1{
+    /* text-align: center; */
+    /* padding-top: 50px;
+   
+} */
+
+/* #home p{
+    /* text-align: center; */
+    /* margin: 30px 0;
+    
+    
+
+} */
+
+/* #home a{
+    text-align: center;
+    display: block;
+    
+} */ 
+
+#home h1{
+    font-size: 3rem;
+
+}
+
+#home p{
+    font-size: 1.2rem;
+}
+
+#home a{
+    background-color: var(--btn-color);
+    padding:  15px 25px;                                  /* width,height,text-align */
+    border-radius: 6px;
+}
+
+#home a:hover{
+    background-color: #4ab052c1;
+}
+
+/* Profile Section */
+#profile{
+    width: 100%;
+    height: 350px;
+    /* background-color: skyblue; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#profile h2{
+    font-size: 2.5rem;
+}
+
+#profile div{
+    width: 80%;
+    height: 200px;
+    /* background-color: pink; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#profile div img{
+    width: 150px;
+    height: 150px;
+    /* background-color: red; */
+    border-radius: 50%;
+    border: 3px solid var(--btn-color);
+
+
+    
+}
+
+#profile div p{
+    width: 500px;
+    height: 180px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+    /* background-color: red; */
+
+    padding-top: 50px;
+
+}
+
+#skills{ 
+    width: 100%;                      /* 100% 600px skyblue flex column space-evenly center same class*/
+    height: 800px;     
+    /* background-color: purple; */
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#skills h2{
+    width: 50%;
+    height: 50px;
+    /* background-color: white; */
+    text-align:center;
+    color: var(--text-color);
+    line-height: 50px;
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+
+#skills .first{
+    width: 900px;
+    height: 400px;
+    /* background-color: aqua; */
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+#skills .first div{
+    width: 430px;
+    height: 330px;   /* 100% */
+    background-color: var(--btn-color);
+    border-radius: 5px;
+    box-shadow: 0 0 8px  rgba(0,0,0,0.3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}  
+
+#skills .first div h3{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+#skills .first div ul{
+    padding-left: 30px;
+}
+
+#skills .first div ul li{
+     font-size: 1.2rem;
+     line-height: 1.6rem;
+}
+
+
+#skills .second{
+    width: 900px;
+    height: 400px;
+    /* background-color: aqua; */
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+#skills .second div{
+    width: 430px;
+    height: 330px;
+    background-color: var(--btn-color);
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+#skills .second div h3{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    
+} 
+
+#skills .second div ul{
+       padding-left: 30px;
+}
+
+#skills .second div ul li{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+/* Contact Section */
+#contact{
+    width: 100%;
+    height: 300px;
+    /* background-color: skyblue; */
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+#contact .contactinfo{
+    width: 500px;
+    height: 250px;
+    /* background-color: red;
+     */
+
+    display: flex;
+    align-items: center;
+}
+
+#contact .contactinfo table{
+        width: 300px;
+        height: 130px;
+}
+
+
+#contact .contactmap{
+    width: 400px;
+    height: 250px;
+    /* background-color: aqua; */
+}
+
+#contact .contactmap iframe{
+    width: 400px;
+    height: 250px;
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: var(--btn-color);
+}
+
+footer span{
+    text-align: center;
+    line-height: 40px;
+    display: block;
+}
+
+
+
+
+/* Myself */
+ /* #contact .contactinfo table{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items:  end;
+}
+
+#contact .contactinfo table tr td{
+    padding-left: 10px;
+
+} */
+
+
+
+/* Mobile Responsive */
+@media (max-width: 768px){
+
+    nav ul{
+        width: 350px;
+    }
+
+    #home h1{
+        text-align: center;
+    }
+
+    #profile{
+        height: 450px;
+    }
+
+    #profile div{
+        flex-direction: column;
+        gap: 0px;
+
+        height: 400px;
+        
+    }
+
+    #profile div p{
+        width: 100%;
+        padding-top: 0;
+
+    }
+
+    #skills{
+        height: 85rem;
+    }
+
+    #skills .first{                                      
+        flex-direction: column;
+        height: 600px;
+        gap: 10px;
+    }
+
+    #skills .first div{                 
+       width: 340px;
+       height: 500px;
+
+       margin-bottom: 10px;
+    }
+
+    #skills .second{
+        flex-direction: column;
+        height: 600px;
+        gap: 20px;
+    }
+
+    #skills .second div{
+        width: 340px;
+        height: 500px;
+    }
+
+    #contact{
+        width: 450px;
+        height: 300px;
+        
+        justify-content: space-evenly;
+        gap: 10px;
+        
+    }
+
+    #contact .contactinfo{
+        width: 300px;
+         margin-left: 5px;
+    }
+
+    #contact .contactinfo table{
+        width: 215px;
+    }
+
+    #contact .contactmap{
+         width: 400px;
+         height: 200px;
+        
+    }
+
+    #contact .contactmap iframe{
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    
+}
+
+/* #skills{
+    height: 1400px;
+}
+
+#skills .skillbox{
+    flex-direction: column;
+    height: 600px;
+
+} 
+
+.skills .skillbox div{
+width: 360px;
+}
+
+#contact{
+flex-direction: column;
+justify-content: space-between;
+height: 550px;
+margin-bottom: 20px;     /* because near the footer */
+
+/* }
+
+#contact .contactinfo{
+height: 130px;
+width: 90vw;
+}
+
+} */
+
+
+
+
